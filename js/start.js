@@ -1,4 +1,4 @@
-import {calculateBMI} from "./script.js";
+import {BMI} from "./script.js";
 
 function start() {
     var buttonCalculateBMI = document.querySelector('#button-calculate-bmi');
@@ -17,10 +17,13 @@ function handleCalculateBMI() {
     var inputWeight = Number(document.querySelector('#input-weight').value);
     var inputHeight = Number(document.querySelector('#input-height').value);
 
-    var bmi = calculateBMI(inputWeight, inputHeight);
+    var bmi = new BMI(inputWeight, inputHeight);
 
-    var resultBMI = document.querySelector('#bmi-result');
-    resultBMI.textContent = bmi.toFixed(2);
+    var resultBMI = document.querySelector('#bmi-result-calculate');
+    resultBMI.textContent = bmi.calculate.toFixed(2);
+
+    var categoryBMI = document.querySelector('#bmi-result-category');
+    categoryBMI.textContent = bmi.category
 }
 
 start();
