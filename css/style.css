@@ -1,7 +1,21 @@
+html {
+    background-color: white;
+}
 body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    border-radius: 15%;
+}
+
+h1 {
+    text-align: center;
 }
 
 input {
@@ -10,4 +24,10 @@ input {
 
 #p-bmi-calculate, #p-bmi-category {
     margin-top: 30px;
+}
+
+#button-calculate-bmi {
+    margin: 0 auto;
+    float: none;
+    display: block;
 }
