@@ -17,9 +17,9 @@ describe('BMI class category', () => {
     ${90}  |  ${1.65}  | ${'Obese (class I)'}
     ${90}  |  ${1.55}  | ${'Obese (class II)'}
     ${90}  |  ${1.45}  | ${'Obese (class III)'}
-    `('$category', ({ weight, height, category }) => {
-        let example = new BMI(weight, height);
-        expect(example.category).toBe(category)
+    `('$category', ({weight, height, category}) => {
+            let example = new BMI(weight, height);
+            expect(example.category).toBe(category)
         }
     )
 })
